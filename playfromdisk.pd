@@ -1,0 +1,18 @@
+#N canvas 476 145 490 370 10;
+#X msg 181 77 open sound/basstone.wav;
+#X obj 172 119 readsf~ 2;
+#X obj 139 174 *~ 0.5;
+#X obj 204 176 *~ 0.5;
+#X obj 176 217 dac~;
+#X obj 89 51 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X obj 95 100 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 1 3 0;
+#X connect 2 0 4 0;
+#X connect 3 0 4 1;
+#X connect 5 0 0 0;
+#X connect 5 0 6 0;
+#X connect 6 0 1 0;
